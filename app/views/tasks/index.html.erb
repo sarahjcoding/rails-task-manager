@@ -1,0 +1,17 @@
+<h1>Tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "New Task", new_task_path  %>
+<%# <div> %>
+<%# <input type ="checkbox" class= "check">
+<% if @task.completed %>
+  <%# <%"fa-solid fa-square-check"%>
+  <%# <% else %>
+  <%# <%"fa-solid fa-square-check"%>
+  <%# <%end%>
+<%# </div> %>
